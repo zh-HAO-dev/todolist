@@ -1,2 +1,2 @@
 # todolist
-a simple practice
+第一次尝试，做的有点简陋，因并未上传微信小程序，需使用微信开发者工具打开，最后界面有彩蛋。by_Haorical
