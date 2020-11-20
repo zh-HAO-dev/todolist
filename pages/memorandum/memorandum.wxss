@@ -1,0 +1,11 @@
+.title{
+  background-color: aliceblue;
+  height: 100px;
+  text-align: center;
+}
+.movie-swiper{
+  height: 90vh;
+}
+.font-break {
+  word-break:break-all;
+}

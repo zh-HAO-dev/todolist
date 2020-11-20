@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/memorandum/memorandum",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/upcoming/upcoming"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text":"备忘录",
+        "pagePath":"pages/memorandum/memorandum",
+        "iconPath": "images/icons/m.png",
+        "selectedIconPath": "images/icons/m-selected.png"
+      },
+      {
+        "text":"待办",
+        "pagePath":"pages/upcoming/upcoming",
+        "iconPath": "images/icons/u.jpg",
+        "selectedIconPath": "images/icons/u-selected.jpg"
+      },
+      {
+        "text":"我的",
+        "pagePath":"pages/index/index",
+        "iconPath": "images/icons/h.jpg",
+        "selectedIconPath": "images/icons/h-selected.jpg"
+      }
+    ],
+    "color": "#000",
+    "selectedColor": "#00f"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

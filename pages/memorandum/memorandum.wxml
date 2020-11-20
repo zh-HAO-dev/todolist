@@ -1,0 +1,12 @@
+<view  style="" >
+    <swiper class="movie-swiper" indicator-dots="{{true}}">
+        <swiper-item wx:for="{{beiwang}}" previous-margin='50rpx' next-margin='50rpx'>
+            <view class="col-4 font-break">
+                	<view class="inputDiv">
+		                <text class="add" bindtap="addNew">第{{index+1}}个：{{item.name}}</text>
+		                <input focus="{{inputShowed}}" placeholder="" type="text" value="{{ inputVal }}" bindinput="inputChange" bindconfirm="addNew"></input>
+	                 </view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>

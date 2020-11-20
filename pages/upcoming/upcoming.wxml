@@ -1,0 +1,26 @@
+<view>
+	<view class="inputDiv">
+		<text class="add" bindtap="addNew">+</text>
+		<input focus="{{inputShowed}}" placeholder="待办事项" type="text" value="{{ inputVal }}" bindinput="inputChange" bindconfirm="addNew"></input>
+	</view>
+	<view class="content">
+		<view class="itemView" bindtap="selClick" wx:for='{{todolist}}' wx:key='index' data-index="{{index}}">
+			<view>
+				<icon size="14" type="{{item.completed? 'success' : 'circle'}}" class="leftIcon"></icon>
+				<text class="{{item.completed ?'name':''}}">{{item.name}}</text>
+			</view>
+			<icon type="clear" size="12" catchtap="clickClear" data-index="{{index}}"></icon>
+		</view>
+	</view>
+
+	<view class="footer" wx:if="{{!show && todolist.length != 0}}">
+		<text bindtap="selAll">全选</text>
+		<text class="allCount">共: <text class='color'>{{allCount}}</text> 条</text>
+		<text class="allCount">选中: <text class='color'>{{selCount}} </text>条</text>
+		<text bindtap="clearAll">clear</text>
+	</view>
+
+</view>
+<view class='null' wx:if="{{show || todolist.length == 0}}">
+	null
+</view>

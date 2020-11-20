@@ -1,0 +1,66 @@
+
+.inputDiv {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 100rpx;
+  padding: 0 50rpx 20rpx 50rpx;
+  box-sizing: border-box;
+}
+.add {
+  width:10%;
+  border-radius: 10rpx 0 0 10rpx;
+  text-align: center;
+  border: 1rpx solid #ddd;
+}
+input {
+  border-top: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+  border-right: 1rpx solid #ddd;
+  width:90%;
+  border-radius: 0 10rpx 10rpx 0 ;
+  text-indent: 20rpx;
+  font-size: 24rpx;
+}
+.itemView {
+  width: 100%;
+  height: 50rpx;
+  border-bottom: 1rpx solid #ddd;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.leftIcon {
+  margin-right: 50rpx;
+}
+.name {
+  text-decoration-line: line-through;
+  color: #999;
+}
+.allCount {
+  color: #333;
+}
+.content {
+  width:100% ;
+  padding: 0 50rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #333;
+  font-size: 30rpx;
+}
+.color {
+  color: red;
+  font-weight: 600;
+}
+.null {
+   text-align: center;
+   color: #333;
+}
